@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "ChocoMoco Cake",
+  "image": "main.jpg",
+  "price": "250",
+  "size": "small"
+},{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "RedVelvet Cake",
+  "image": "redvelvet.jpg",
+  "price": "300",
+  "size": "medium"
+},{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Chiffon Cake",
+  "image": "chiffon.jpg",
+  "price": "200",
+  "size": "small"
+},{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "Yello Butter Cake",
+  "image": "yellow.jpg",
+  "price": "500",
+  "size": "large"
+},{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "Carrot Cake",
+  "image": "carrot.jpg",
+  "price": "350",
+  "size": "medium"
+},{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Brownie Cake",
+  "image": "brownie.jpg",
+  "price": "200",
+  "size": "small"
+},{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": "Fruit Cake",
+  "image": "fruit.jpg",
+  "price": "600",
+  "size": "large"
+},{
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Opera Cake",
+  "image": "opera.jpg",
+  "price": "400",
+  "size": "medium"
+}]
