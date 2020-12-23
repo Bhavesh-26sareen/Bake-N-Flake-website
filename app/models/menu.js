@@ -8,7 +8,7 @@ const mongoose = require('mongoose') ;
 
 //menuSchema is the skeleton or blueprint of our document present in db
 const menuSchema = new mongoose.Schema({
-     name: {type: String, required: [true, "No Name Specified"]},
+     name: {type: String, required: true},
      image: { type: String, required: true},
      price: {type: Number, required: true},
      size: { type: String, required: true}

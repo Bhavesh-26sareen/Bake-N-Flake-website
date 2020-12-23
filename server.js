@@ -1,3 +1,4 @@
+// Gives us access to variables set in the .env file via `process.env.VARIABLE_NAME` syntax
 require('dotenv').config()
 
 const express = require('express') //
@@ -9,6 +10,12 @@ const path = require('path') //
 const mongoose = require('mongoose') //
 const session = require('express-session')           
 const flash = require('express-flash')
+
+
+
+
+
+
 
 //to save the session into db require connect-mongo module  
 const MongoDbStore = require('connect-mongo')(session)
@@ -41,7 +48,13 @@ app.use(session({
 }))
 app.use(flash())
 
- 
+
+//passport config
+const passport = require('passport')
+const passportinit = require('./app/config/passport')
+passportinit(passport)
+app.use(passport.initialize());
+app.use(passport.session()) ;
 
 const expressLayout = require('express-Ejs-layouts') //
 //const session  = require('express-session')
@@ -57,13 +70,19 @@ app.use(express.static('public'))   //
 //Global middleware -> to avail the session key in the layout.ejs we have to mount the session on locals
 app.use((req,res,next) => {
 
-      res.locals.session = req.session
+      res.locals.session = req.session ;
+      res.locals.user = req.user ;
+      
       next()
 })
 
 
 //To receive data on server of json(request)  notation we need to enable to tell server that we are receiving json data
 app.use(express.json()) 
+//
+app.use(express.urlencoded({extended: false}))
+
+
 // set template engine 
 app.use(expressLayout) //code which will be used again and again will be put in layout.ejs
 app.set('views', path.join(__dirname,'/resources/views')) // here you set that all templates are located in `/views` directory
