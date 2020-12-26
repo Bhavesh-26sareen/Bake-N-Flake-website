@@ -9,7 +9,7 @@ function authcontroller(){
            res.render('auth/login')
         },
         logout(req,res) {
-          req.logout()
+          req.logout()  
           return res.redirect('/login')
         },
         loginpost(req, res , next){

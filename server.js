@@ -11,10 +11,7 @@ const mongoose = require('mongoose') //
 const session = require('express-session')           
 const flash = require('express-flash')
 
-
-
-
-
+const Emitter = require('events')
 
 
 //to save the session into db require connect-mongo module  
@@ -29,6 +26,13 @@ connection.once('open', () => { //open is a event listener
 }).catch(err => {
   console.log('Connection failed...')
 }); 
+
+//Event emitter
+const eventemitter = new Emitter()
+app.set('eventemitter', eventemitter) //binding app with emitter
+
+
+
 
 //session store
 let mongoStore = new MongoDbStore({
@@ -106,7 +110,29 @@ require('./routes/web') (app)   //passing instance of app
 // })
 
 
- app.listen(PORT , () => {
+ const server = app.listen(PORT , () => {
    console.log('Listening on port 3300')
  })
+  
+const io = require('socket.io')(server) 
+io.on('connection',(socket) => {
+   // join the client(browser)
+    socket.on('join', (orderid) => {
+      socket.join(orderid)
+    })
+  
+})
 
+//receving emit emitter
+eventemitter.on('updatedorder',(data) => {
+  io.to(`order_${data.id}`).emit('orderupdated',data)
+})
+
+
+
+
+
+//receving emit emitter for admin 
+eventemitter.on('orderplaced',(data) => {
+  io.to('adminroom').emit('orderplaced',data)
+})
