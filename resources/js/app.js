@@ -89,7 +89,7 @@ update(order)
 //socket connection on client side
 
 let socket = io()
-initAdmin(socket)
+
 //join
 if(order){
 socket.emit('join', `order_${order._id}`)
@@ -99,6 +99,7 @@ socket.emit('join', `order_${order._id}`)
 //admin 
 const admin = window.location.pathname
 if(admin.includes('admin')){
+    initAdmin(socket)
 socket.emit('join' , 'adminroom')
 }
 

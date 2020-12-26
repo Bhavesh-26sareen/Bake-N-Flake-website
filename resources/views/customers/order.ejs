@@ -1,13 +1,14 @@
 <section class="order">
+    <div  class="container mx-auto pt-12 px-2"><h1 class="font-bold text-lg mb-4 text-center">All Orders</h1>
     <% if(messages.success){ %>
        
     <div id="alert" class="container mx-auto flex justify-around"> <span class="mess text-sm px-4 py-3 text-white font-bold text-center"> <%=messages.success%></span> </div>
    
          <%}%>
-         <div ><span></span></div>
-    <div  class="container mx-auto pt-6 px-2"><h1 class="font-bold text-lg mb-4">All Orders</h1></div>
-   <table class="w-full  table-auto bg-white-400 border-4" >
-       <thead>
+         
+   
+   <table class="w-full table-auto bg-white-400 " >
+       <thead >
            <tr>
                <th class="px-4 py-2 text-left italic">Orders</th>
                <th class="px-4 py-2 text-left italic">Address</th>
@@ -39,4 +40,5 @@
        </tbody>
 
    </table>
+    </div>
 </section>

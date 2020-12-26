@@ -494,3 +494,25 @@ a.link {
   color: #FE5F1E;
 }
 
+.order {
+  min-height: calc(100vh - 301px);
+}
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: 90%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .status ul li span:before {
+    font-size: 34px;
+  }
+}
+

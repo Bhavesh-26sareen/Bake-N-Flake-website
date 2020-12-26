@@ -27010,8 +27010,7 @@ function update(order) {
 
 update(order); //socket connection on client side
 
-var socket = io();
-Object(_admin__WEBPACK_IMPORTED_MODULE_3__["initAdmin"])(socket); //join
+var socket = io(); //join
 
 if (order) {
   socket.emit('join', "order_".concat(order._id));
@@ -27021,6 +27020,7 @@ if (order) {
 var admin = window.location.pathname;
 
 if (admin.includes('admin')) {
+  Object(_admin__WEBPACK_IMPORTED_MODULE_3__["initAdmin"])(socket);
   socket.emit('join', 'adminroom');
 } //listen emitted event from server.js
 

@@ -180,3 +180,27 @@ a.link{
 .status ul li.current span{
     color: $primary;
 }
+.order {
+    min-height: calc(100vh - 301px);
+}
+
+//making responsive 
+
+
+
+@media(max-width:1060px) { //if browser width is lower than 1060px then apply this styles 
+    .container {
+        max-width: 90%;
+    }
+    table {
+       display: block;
+       overflow-x: auto;
+       white-space: nowrap;
+    }
+}
+
+@media(max-width: 768px) {
+.status ul li span:before {
+    font-size: 34px;
+}
+}

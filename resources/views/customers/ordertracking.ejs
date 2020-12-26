@@ -1,18 +1,18 @@
 <section class="status">
     
     <div class="container mx-auto ">
-        <div class=" pt-16 w-2/3 mx-auto">
+        <div class=" pt-16 w-full lg:w-2/3 mx-auto">
             <div class=" flex mb-12 mt-2 ml-2 items-center justify-between">
-                <h1 class="text-4xl font-extrabold">Track Delivery Details</h1>
+                <h1 class="text-base md:text-4xl font-bold mr-2">Track Delivery Details</h1>
                 <h5 class="bg-white py-1 rounded-full text-green-700 px-4 mr-2 text-sm"><%=order._id%></h5>
                 <input id="hiddeninput" type="hidden" value="<%= JSON.stringify(order) %>">
             </div>
             <ul>
-                <li class="line text-xl pb-16 font-semibold" data-status="Order_placed"><span>Order Placed</span></li>
-                <li class="line text-xl pb-16 font-semibold" data-status="confirmed"><span>Order Confirmation</span></li>
-                <li class="line text-xl pb-16 font-semibold" data-status="prepared"><span>Preparation</span></li>
-                <li class="line text-xl pb-16 font-semibold" data-status="delivered"><span>Out for Delivery</span></li>
-                <li class="line text-xl pb-4 font-semibold "data-status="completed"><span>Complete</span></li>
+                <li class="line text-sm md:text-3xl pb-16 font-semibold" data-status="Order_placed"><span>Order Placed</span></li>
+                <li class="line text-sm md:text-3xl pb-16 font-semibold" data-status="confirmed"><span>Order Confirmation</span></li>
+                <li class="line text-sm md:text-3xl  pb-16 font-semibold" data-status="prepared"><span>Preparation</span></li>
+                <li class="line text-sm md:text-3xl pb-16 font-semibold" data-status="delivered"><span>Out for Delivery</span></li>
+                <li class="line text-sm md:text-3xl pb-4 font-semibold "data-status="completed"><span>Complete</span></li>
             </ul> 
         </div>
      
