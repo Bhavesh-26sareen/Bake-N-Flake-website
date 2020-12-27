@@ -64,7 +64,7 @@ app.use(passport.session()) ;
 const expressLayout = require('express-Ejs-layouts') //
 //const session  = require('express-session')
 
-const PORT = process.env.PORT || 3300 //
+const PORT = process.env.PORT //
 app.use(express.static('public'))   //
 
 
