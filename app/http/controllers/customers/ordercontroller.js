@@ -14,11 +14,11 @@ function ordercontroller() {
        async show(req,res) {
             const order = await Order.findById(req.params.id)
             
-           
             if(req.user._id.toString() === order.customerid.toString())
             {
               return res.render('customers/ordertracking',{ order : order})   
             }
+               console.log("hello")
                 return res.redirect('/')
             
         },

@@ -4,11 +4,12 @@
 
 body{
     font-family: 'Lato', sans-serif;
-    -webkit-font-smoothing: antialised;
     color: $dark;
    
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 nav.bhav li:last-child a {
     background: $primary;
     &:hover{
@@ -61,7 +62,11 @@ section.main{
         outline: none;
     }
 }
-
+button {
+    &:focus{
+        outline: none;
+    }
+}
 .btn-primary{
     background: $primary;
     transition: $smooth;

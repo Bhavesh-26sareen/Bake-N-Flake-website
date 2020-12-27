@@ -3,7 +3,7 @@ function guest (req , res , next) {
     {
         return next()
     }
-    console.log("one")
+    
     return res.redirect('/')
 }
 

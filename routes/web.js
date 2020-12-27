@@ -15,9 +15,9 @@ function initRoutes(app) {
     
     app.get('/' , homecontroller().index)
     app.get('/cart' , cartcontroller().index)
-    app.get('/login',authcontroller().login) //login is a function which is located in authcontroller
+    app.get('/login', authcontroller().login) //login is a function which is located in authcontroller
     app.post('/login', authcontroller().loginpost)
-    app.get('/register',guest, authcontroller().register)
+    app.get('/register', authcontroller().register)
     app.post('/register',authcontroller().registerpost)
     app.post('/update-cart',cartcontroller().update)
     app.post('/logout',authcontroller().logout)

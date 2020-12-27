@@ -18,7 +18,8 @@ const Emitter = require('events')
 const MongoDbStore = require('connect-mongo')(session)
 
 //database connection 
-const url = 'mongodb://localhost:27017/cake'; //
+//const url = 'mongodb://localhost:27017/cake'; //
+const url = 'mongodb+srv://admin-bhavesh:jaimatadi@cluster0.tdue7.mongodb.net/cake';
 mongoose.connect(url, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true,});//, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify : true}) ;
 const connection = mongoose.connection;
 connection.once('open', () => { //open is a event listener 

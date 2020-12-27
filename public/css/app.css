@@ -307,8 +307,11 @@
 
 body {
   font-family: "Lato", sans-serif;
-  -webkit-font-smoothing: antialised;
   color: #232323;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 nav.bhav li:last-child a {
@@ -373,6 +376,10 @@ section.main {
 }
 
 .add-to-cart:focus {
+  outline: none;
+}
+
+button:focus {
   outline: none;
 }
 
