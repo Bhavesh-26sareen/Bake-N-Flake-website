@@ -48,6 +48,12 @@
             <% if(user) { %>
         <div>
             <form action="/orders" method="POST" class="mt-6">
+                <div class="relative w-1/2 ml-auto">
+                <select class="block border border-grey-400 p-2 w-full mb-4">
+                    <option>Cash on Delivery</option>
+                   
+                </select>
+            </div>
                 <input class="border border-grey-400 p-2 w-1/2 mb-4" type="text" placeholder="Phone Number" name="phone">
                 <input class="border border-grey-400 p-2 w-1/2" type="text" placeholder="Address" name="address">
                <div>

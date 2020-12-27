@@ -311,12 +311,37 @@ body {
   color: #232323;
 }
 
-nav li:last-child a {
-  background: #FE5F1E;
+nav.bhav li:last-child a {
+  background: #FF0000;
 }
 
-nav li:last-child a:hover {
-  background: #b23301;
+nav.bhav li:last-child a:hover {
+  background: #b952b9;
+}
+
+nav.sar li a:hover i {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.4);
+}
+
+.fa-facebook {
+  color: #4267B2;
+}
+
+.fa-instagram {
+  color: #cd486b;
+}
+
+.fa-pinterest {
+  color: #fa0303;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+.fa-twitter {
+  color: #0097e6;
 }
 
 nav li a {
@@ -324,7 +349,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #FE5F1E;
+  color: #FF0000;
 }
 
 section.main {
@@ -336,13 +361,13 @@ section.main {
 }
 
 .add-to-cart {
-  border: 2px solid #FE5F1E;
-  color: #FE5F1E;
+  border: 2px solid #FF0000;
+  color: #FF0000;
   transition: all 0.3s ease-in-out;
 }
 
 .add-to-cart:hover {
-  background: #FE5F1E;
+  background: #FF0000;
   border-color: #fff;
   color: #fff;
 }
@@ -352,12 +377,12 @@ section.main {
 }
 
 .btn-primary {
-  background: #FE5F1E;
+  background: #FF0000;
   transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-  background: #b23301;
+  background: #b952b9;
 }
 
 section.cart {
@@ -365,7 +390,7 @@ section.cart {
 }
 
 section.cart .amount {
-  color: #FE5F1E;
+  color: #FF0000;
 }
 
 section.login {
@@ -374,32 +399,37 @@ section.login {
 }
 
 section.login a {
-  color: #FE5F1E;
+  color: #FF0000;
 }
 
 section.login a:hover {
-  color: #b23301;
+  color: #b952b9;
 }
 
 .heading {
-  color: #FE5F1E;
+  color: #FF0000;
 }
 
-.foot {
+section.order {
   background: #F8F8F8;
 }
 
 a.link {
-  color: #FE5F1E;
+  color: #FF0000;
 }
 
 .mess {
-  background: #FE5F1E;
+  background: #FF0000;
 }
 
 .status {
   background: #F8F8F8;
   min-height: calc(100vh - 301px);
+}
+
+.offer {
+  background: #F8F8F8;
+  min-height: calc(100vh - 370px);
 }
 
 .status ul {
@@ -487,11 +517,11 @@ a.link {
 }
 
 .status ul li.current span::after {
-  background: #FE5F1E;
+  background: #FF0000;
 }
 
 .status ul li.current span {
-  color: #FE5F1E;
+  color: #FF0000;
 }
 
 .order {

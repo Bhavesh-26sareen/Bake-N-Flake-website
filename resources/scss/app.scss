@@ -9,11 +9,32 @@ body{
    
 }
 
-nav li:last-child a {
+nav.bhav li:last-child a {
     background: $primary;
     &:hover{
         background: $primary-hover; 
     }
+}
+
+nav.sar li a:hover i {
+    transition: $smooth;
+   transform: scale(1.4);
+}
+
+.fa-facebook{
+    color: #4267B2;
+}
+.fa-instagram{
+    color: #cd486b;
+}
+.fa-pinterest{
+    color: #fa0303;
+}
+.fa-linkedin{
+    color: #0e76a8 ;
+}
+.fa-twitter{
+    color: #0097e6;
 }
 nav li a {
     transition: $smooth;
@@ -72,7 +93,7 @@ section.login{
     color: $primary;
 }
 
-.foot{
+section.order{
     background: $secondary;
 }
 
@@ -88,6 +109,12 @@ a.link{
     
     background: $secondary;
     min-height: calc(100vh - 301px);
+}
+
+.offer{
+    
+    background: $secondary;
+    min-height: calc(100vh - 370px);
 }
 .status ul {
   margin-left: 84px;

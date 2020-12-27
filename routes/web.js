@@ -24,7 +24,7 @@ function initRoutes(app) {
     app.post('/orders' ,auth, ordercontroller().store)
     app.get('/orders',auth, ordercontroller().index)
     app.get('/orders/:id',auth, ordercontroller().show )
-
+    app.get('/offers',homecontroller().offer)
     app.get('/admin/orders',adminauth, admincontroller().index)
     app.post('/admin/order/status',adminauth, statuscontroller().update)
     

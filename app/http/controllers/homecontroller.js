@@ -13,6 +13,9 @@ function homecontroller(){
            const cakes = await Menu.find()
            // console.log(cakes)
            return res.render('home', {cakes: cakes})
+        },
+        offer(req,res){
+            return res.render('offer')
         }
     } 
 
