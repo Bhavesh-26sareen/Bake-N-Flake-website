@@ -44,7 +44,7 @@ let mongoStore = new MongoDbStore({
 //session library works as a middleware
 //passing object to the session function
 app.use(session({
-  secret: topsecret, //if cookie session then used secret is very important //use to encrypt the cookie as it will provide extra level of security as cookie stores only the session id not the user details
+  secret: 'topsecret', //if cookie session then used secret is very important //use to encrypt the cookie as it will provide extra level of security as cookie stores only the session id not the user details
   resave: false, //saves the cookie on each client <--> communitcation
   store: mongoStore,
   saveUninitialized: false, // if true then means save cookie even if nothing to track
