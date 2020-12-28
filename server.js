@@ -61,7 +61,7 @@ passportinit(passport)
 app.use(passport.initialize());
 app.use(passport.session()) ;
 
-const expressLayout = require('express-Ejs-layouts') //
+const expressLayout = require('express-ejs-layouts') //
 //const session  = require('express-session')
 
 const PORT = process.env.PORT //
