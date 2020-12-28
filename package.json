@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Bhavesh",
   "scripts": {
-    "dev": "node server.js",
+    "start": "node server.js",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
@@ -28,6 +28,7 @@
     "express-session": "^1.17.1",
     "moment": "^2.29.1",
     "mongoose": "^5.11.8",
+    "nodemon": "2.0.6",
     "noty": "^3.2.0-beta",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
